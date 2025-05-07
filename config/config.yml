@@ -1,0 +1,31 @@
+simulation:
+  start_date: "2023-04-01"
+  end_date: "2025-04-30"
+  user_count: 100
+  event_count: 2000
+  subscription_count: 59
+  orders_range: [500, 1300]
+
+user_profiles:
+  personas:
+    - solopreneur
+    - designer
+    - accountant
+    - small_business_team
+  churn_model: "random"
+
+event_behavior:
+  pattern: "random"
+
+subscription_plans:
+  - name: Basic
+    price_monthly: 9.99
+    price_yearly: 99
+  - name: Standard
+    price_monthly: 19.99
+    price_yearly: 199
+  - name: Premium
+    price_monthly: 49.99
+    price_yearly: 499
+  trial_days: 14
+  default_plan: Standard
